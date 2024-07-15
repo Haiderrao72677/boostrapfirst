@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book In Budget - Enjoy your Events</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="eventstyle.css">
+</head>
+
+<body>
+  <!-- Navbar      -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="logo.jpg" height="60px" width="60px" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="/about.html">About</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link  active" href="/">Events</a>
+          </li>
+
+          
+          <li class="nav-item">
+            <a class="nav-link " href="/contact.html">Contact us</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+      <!-- Event detail form -->
+ <div class="container ">
+        <h1 class="topHead">Events Information</h1>
+        <div class="apply_box">
+            <h1>Client Information <span class="small_font">(C-Info)</span></h1>
+            <form action="">
+                <div class="form_container">
+                    <div class="form_controll">
+                        <label for="first_name">
+                            Enter Your Name
+                            <input type="text" id="first_name" name="first_name" placeholder="Enter first_name...">
+                        </label>
+                    </div>
+                    <div class="form_controller">
+                        <label for="phone_number">
+                            Enter Your Phone Number
+                            <input type="number" id="phone_number" name="phone_number"
+                                placeholder="Enter phone-number...">
+                        </label>
+                    </div>
+                    <div class="form_controll">
+                        <label for="Email">
+                            Enter Your Email
+                            <input type="email" id="email" name="email" placeholder="Enter Your email...">
+                        </label>
+                    </div>
+                    <div class="form_controller">
+                        <label for="Zip-code">
+                            Enter Your Zip-Code
+                            <input type="number" id="Zip-code" name="Zip-code" placeholder="Enter Zip-code...">
+                        </label>
+                    </div>
+                    <div class="textarea_controll">
+                        <label for="Adress"> Enter Adress </label>
+                        <textarea name="Adress" id="address" rows="4" cols="50" placeholder="Adress ...">
+                        </textarea>
+                    </div>
+                    <div class="form_controll">
+                        <label for="city"> City Name</label>
+                        <input name="city" id="city" placeholder="Enter city name ">
+                    </div>
+                    <div class="state-chose">
+                        <label for="state">Your state is </label>
+                        <select name="state">
+                            <option value="a">Select</option>
+                            <option value="k">Kashmir</option>
+                            <option value="g">Gilgit </option>
+                            <option value="k">Karachi</option>
+                            <option value="s">Sindh</option>
+                            <option value="p">Islamabad</option>
+                            <option value="r">Rawalpindi</option>
+                            <option value="i">Lahore</option>
+                        </select>
+                    </div>
+                    <div class="form_controll">
+                        <label for="date"> Prefreed Event Date </label>
+                        <input  value="22/01/2003" type="date" name="date" id="date">
+                    </div>
+                    <div class="start-time">
+                        <label for="start-time">Start Time : </label>
+                        <input type="time" id="start-time" name="start-time" required>
+                    </div>
+                    <div class="end-time">
+                        <label for="end-time">End Time : </label>
+                        <input type="time" id="end-time" name="end-time" required>
+                    </div>
+                    <div class="num-tables">
+                        <label for="num-tables">Number of Tables </label>
+                        <input type="number" id="num-tables" name="num-tables" min="1" max="100000" value="1" required>
+                    </div>
+                    <div class="num-chairs">
+                        <label for="num-chairs">Number of Chairs </label>
+                        <input type="number" id="num-chairs" name="num-chairs" min="1" max="11000000" value="1" required>
+                    </div>
+                    <div class="subtotal">
+                        <label for="subtotal">Subtotal </label>
+                        <input type="number" id="subtotal" name="subtotal" step="0.01" min="0" required>
+                    </div>
+                    <div class="deposit">
+                         <label for="deposit">Deposit:</label>
+                        <input type="number" id="deposit" name="deposit" step="0.01" min="0" required>
+                    </div>
+                    <div class="Balance">
+                        <!-- <h2>Current Balance:</h2>
+                        <div id="balance">$100.00</div> -->
+                        <label for="balance">Balance : </label>
+                        <span id="balance"> 0.00</span>
+                    </div>
+
+                </div>
+                <div class="button-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  <!-- footer -->
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2020–2023 N-TECH, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

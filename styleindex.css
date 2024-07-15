@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    scroll-behavior: smooth;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4;
+
+}
+
+
+.nav-item{
+    font-size: 25px;
+   
+}
+
+
+
+
+    /* Hero section */
+
+
+.hero-section{
+    background-image: url(https://media.istockphoto.com/id/479977238/photo/table-setting-for-an-event-party-or-wedding-reception.jpg?s=2048x2048&w=is&k=20&c=oiPAjSyGwlZilu9L4w4X51XQVsFXK-oh_3bwYEwdUmg=);
+    /* background-image: url(images/heroimage.jfif); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+    color: black;
+    justify-items: center;
+    display: grid;
+    place-items: center;
+    opacity: 1;
+   
+   
+}
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+ .hero-section h2{
+  font-size: 96px;
+  align-self: center;
+ }
+
+ .hero-section h3{
+  font-size: 42px ;
+  align-self: center;
+ }
+ .hero-section p{
+    font-size: 30px ;
+  align-self: center;
+  
+ }
+
+
